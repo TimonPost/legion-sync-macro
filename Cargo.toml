@@ -1,0 +1,20 @@
+[package]
+name = "legion-sync-macro"
+version = "0.0.0"
+authors = ["Timon Post"]
+edition = "2018"
+description = "A macro to track data changes."
+keywords = ["track", "monitor", "modification", "change", "trace"]
+exclude = ["target", "Cargo.lock"]
+license = "MIT"
+repository = "https://github.com/entity-sync-rs/track-macro"
+documentation = "https://docs.rs/track-macro/"
+readme = "README.md"
+
+[dependencies]
+syn = "1.0.14"
+quote = "1.0.2"
+darling = "0.10.2"
+
+[lib]
+proc-macro = true
