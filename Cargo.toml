@@ -15,6 +15,7 @@ readme = "README.md"
 syn = "1.0.14"
 quote = "1.0.2"
 darling = "0.10.2"
+type-uuid = "0.1"
 
 [lib]
 proc-macro = true

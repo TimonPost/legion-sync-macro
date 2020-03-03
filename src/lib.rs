@@ -65,6 +65,12 @@ pub fn sync(_attr: TokenStream, unparsed_input: TokenStream) -> TokenStream {
     let name = input.ident.clone();
 
     let implementation = quote! {
+        impl #name {
+            pub fn id(&self) -> ComponentTypeId {
+                ComponentTypeId::of::<#name>()
+            }
+        }
+
         #[track(serialization = #track_attr)]
         #input
 
